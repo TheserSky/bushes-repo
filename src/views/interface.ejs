@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/dimeciones.css">
+    <link rel="stylesheet" href="./styles/style--font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Interfaz</title>
+</head>
+<body style="overflow: hidden;">
+    <div class="aling-expand">
+        <div class="div-content-one">
+            <div class="aling-expand p-1">
+                <div class="aling-normal">
+                    <div>
+                        <img class="img-logi-ss" src="./img-objects--.png" alt="">
+                    </div>
+                    <div>
+                        <p class="p-r-text-y">Bushes</p>
+                    </div>
+                </div>
+                <div>
+                    <a id="img-add-more" href="/addFriend">
+                        <i class="bi bi-plus-lg"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <% for (let g = rows.length - 1; g >= 0; g--) { %> 
+                    <% if (rows[g].user_id == user_id) { %>
+                        <% let fri = rows[g].fri_id %>
+                        <% for (let g = users.length - 1; g >= 0; g--) { %> 
+                            <% if (users[g].user_id == fri) { %>
+                                <div class="aling-expand p-1 back-onder-ss">
+                                    <div class="aling-normal">
+                                        <div>
+                                            <i id="omg-ii--" class="bi bi-archive"></i>
+                                        </div>
+                                        <div>
+                                            <p>User // </p>
+                                        </div>
+                                        <div>
+                                            <p class="online-text-eee"><%=users[g].name_user%></p>
+
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="/getIdUser/<%=users[g].user_id%>"><i id="img-logi-space-expand" class="bi bi-cloudy"></i></a>
+                                    </div>
+                                </div>
+                            <% } else { %>
+                            <% } %> 
+                        <% } %>
+                    <% } else { %>
+                    <% } %> 
+                <% } %>
+            </div>
+        </div>
+        <% if(msj_json.length != 0){%>
+            <div class="div-content-two">
+                <!-- * PLANTILLA PARA EL NAV NAV DEL CHAT DEL USER-->
+                <DIV class="aling-expand contnet-navabr">
+                    <div>
+                        <div class="aling-normal">
+                            <div>
+                                <i id="omg-ii--" class="bi bi-archive"></i>
+                            </div>  
+                            <div>
+                                <p>User // </p>
+                            </div>
+                            <div>
+                                <p class="online-text-eee">name_user</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="/closeSvent"><i style="color: red;" class="bi bi-activity"></i></a>
+                    </div>
+                </DIV>
+                <div class="content-msj---" id="content-msj----">
+                    <% for (let g = 0; g < msj_json.length; g++) { %>
+                        <%if(msj_json[g].msj_made == user_id){ %>
+                            <div class="start--open-space">
+                                <div class="container-msj12">
+                                <p ><%= msj_json[g].msj_text %></p>
+                                    
+                                </div>
+                            </div>
+                            
+                        <% }else{%>
+                            <div class="start--close-space">
+                                <div class="container-msj12--">
+                                    <p><%= msj_json[g].msj_text %></p>
+     
+                                </div>
+                            </div>
+                            
+                        <%} %>
+                    <% } %>
+                    
+                </div>
+                <div class="space-btn-input-- center">
+                    <div>
+                        <form action="/msjF" method="post">
+                            <input type="text" name="msj" id="msj-text--" placeholder="Escrebe tu mensaje">
+                            <button class="btn_btn--s">></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <%} else {%>
+            <div class="div-content-two ex-sss-das">
+                <div class="center">
+                    <div style="margin-top: 10em;">
+                        <p style="text-align: center;">Bushes</p>
+                        <p>Sin ningun chat en este momento...</p>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+    </div>
+    <script src="./styles/scrool.js"></script>
+</body>
+</html>

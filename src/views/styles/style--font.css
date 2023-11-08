@@ -1,0 +1,176 @@
+.div-content-one{
+    height: 100vh;
+    width: 25%;
+    border-right: 0.1em solid rgb(62, 62, 62);
+}
+
+#img-add-more{
+    font-size: 1.3em;
+    padding: 0.4em 0.5em;
+    border-radius: 100%;
+    color: rgb(255, 255, 255);
+    cursor: context-menu;
+    transition: 0.2s;
+}
+#img-add-more:hover{
+    background-color: rgba(46, 34, 34, 0.296);
+}
+#omg-ii--{
+    color: rgb(107, 60, 71);
+    border-radius: 100%;
+    padding: 0.7em 0.8em;
+    background-color: #ff004e30;
+    margin-right: 0.7em;
+}
+.online-text-eee{
+    margin-left: 0.7em;
+    color: rgb(137 137 217);
+}
+.back-onder-ss{
+    background-color: rgb(35, 35, 36);
+    margin: 0.5em;
+    border-radius: 0.5em;
+}
+#img-logi-space-expand{
+    border-radius: 100%;
+    color: rgb(0, 255, 119);
+}
+#img-logi-space-expand:hover{
+    color: rgb(0, 255, 119);
+}
+.div-content-two{
+    width: 75%;
+    height: 100vh;
+    background-color: transparent;
+    position: relative;
+}
+.contnet-navabr{
+    border: 0.1em solid rgba(255, 0, 0, 0.744);
+    position: absolute;
+    width: 100%;
+    padding: 1em;   
+    box-sizing: border-box; 
+    top: 0;
+    background-color: rgba(17, 18, 18, 0.412);
+}
+.space-btn-input--{
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    
+}
+.btn_btn--s{
+    padding: 0.7em 1em;
+    background-color: red;
+    color: white;
+    border-radius: 0.5em;
+    border: 0em solid white;
+}
+#msj-text--{
+    padding: 0.5em;
+    width: 50em;
+    border: 0em solid white;
+    border-radius: 0.2em;
+    background-color: transparent;
+    border-bottom: 0.1em solid gray;
+    outline:1em white;
+    color: white;
+}
+.content-msj---{
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 4em;
+    position: absolute;
+    top: 3.5em;
+    padding: 0.5em 9em;
+    overflow-y: auto;
+}
+.start--close-space{
+    display: flex;
+    justify-content: flex-end;
+}.start--open-space{
+    display: flex;
+    justify-content: flex-start;
+}
+.container-msj12{
+    background-color: rgb(255 68 68);
+    max-width: 25em;
+    padding:0.5em 1em;
+    border-radius: 1em;
+    margin: 0.5em;
+    color: rgb(255, 255, 255);
+}
+.container-msj12--{
+    background-color: rgb(59, 59, 59);
+    max-width: 25em;
+    padding:0.5em 1em;
+    border-radius: 1em;
+    margin: 0.5em;
+    color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Color de fondo de la barra de desplazamiento */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #424242; /* Color de la barra de desplazamiento */
+  }
+
+
+@media screen and (max-width: 787px){
+    .content-msj---{
+        background-color: transparent;
+        width: 100%;
+        box-sizing: border-box;
+        bottom: 4em;
+        position: absolute;
+        top: 3.5em;
+        padding: 0.5em 1em;
+        overflow-y: auto;
+    }
+    #msj-text--{
+        padding: 0.5em;
+        width: 20em;
+        border: 0em solid white;
+        border-radius: 0.2em;
+        background-color: transparent;
+        border-bottom: 0.1em solid gray;
+        outline:1em white;
+        color: white;
+    }
+    .div-content-two{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(17, 18, 18);
+        position: relative;
+        position: fixed;
+        left: 0;
+        top: 0;
+        box-sizing: border-box;
+    }
+    .ex-sss-das{
+        display: none;
+    }
+    .div-content-one{
+        height: 100%;
+        width: 100%;
+        border-right: 0.1em solid rgb(62, 62, 62);
+        box-sizing: border-box;
+    }
+    .space-btn-input--{
+        box-sizing: border-box;
+        width: 100%;
+        position: absolute;
+        bottom: 0em;
+        padding: 1em;
+        
+    }
+}

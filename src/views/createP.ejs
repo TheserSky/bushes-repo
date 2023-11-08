@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/dimeciones.css">
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="aling-expand p-1">
+        <div class="aling-normal">
+            <div>
+                <img class="img-logi-ss" src="./bushhp`-img.png" alt="">
+            </div>
+            <div>
+                <p class="p-r-text-y">Bushes</p>
+            </div>
+        </div>
+        <div>
+            <a class="a-style-in" href="/interface">Home</a>
+        </div>
+    </div>
+    <div class="center">
+        <div class="box-implemet-content">
+            <h1 class="text-space--">Crear producto</h1>
+
+            <form action="/createProduct" method="post">
+                <p class="p-p-drive">Nombre</p>
+                <input class="drive-input-space" maxlength="49" type="text" name="p_name" required>
+                <p class="p-p-drive">Descripcion</p>
+                <input class="drive-input-space" maxlength="149" type="text" name="p_description" required>
+                <p class="p-p-drive">Categoria</p>
+                <input class="drive-input-space" maxlength="15" type="text" name="p_category" required>
+                <p class="p-p-drive">Precio de venta</p>
+                <input class="drive-input-space" type="number" name="p_cost" required>
+
+                <div class="center">
+                    <input class="btn-inherit--" type="submit" value="Iniciar">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

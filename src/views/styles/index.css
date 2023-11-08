@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: calibri;
+    background-color: rgb(17, 18, 18);
+    color: white;
+}
+.text-space--{
+    font-size: 1.2em;
+}
+.center{
+    justify-content: center;
+    display: flex;
+}
+.box-implemet-content{
+    width: 20em;
+    background-color: rgb(35, 35, 36);
+    padding: 1em;
+    border-radius: 1.0em;
+}
+.btn-inherit--{
+    padding: 0.8em 10.5em;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 0em solid white;
+    border-radius: 0.5em;
+    margin-top: 2em;
+    transition: 0.2s;
+}
+.btn-inherit--:hover{
+    background-color: rgb(205, 205, 205);
+    color: rgb(0, 0, 0);
+}
+.drive-input-space{
+    width: 22em;
+    background-color: rgba(255, 255, 255, 0.148);
+    outline: 0;
+    border: 0em solid transparent;
+    padding: 0.8em 1em;
+    border-radius: 1em;
+    color: white;
+}
+.p-r-text-y{
+    font-size: 1.5em;
+    margin-left: 0.6em;
+}
+.img-s-logi{
+    display: flex;
+    align-items: normal;
+    align-items: center;
+    padding: 1em;
+}
+.img-logi-ss{
+    width: 2.5em;
+}
+.aling-normal{
+    display: flex;
+    align-items: center;
+    justify-items: normal;
+}
+.aling-expand{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.p-p-drive{
+    margin: 1em 0;
+}
+.a-style-in{
+    padding: 0.5em 1em;
+    background-color: rgba(76, 102, 179, 0.905);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5em;
+}
+.space-dow-text---{
+    margin-top: 1em;
+    color: rgb(173 61 61);
+    text-decoration: none;
+    display: inline-block;
+}
+.sub-btn-btn--{
+    padding: 0.7em 5em;
+    color: white;
+    background-color: rgb(125, 143, 233);
+    position: absolute;
+    margin-top: 2em;
+}
+.in-in-lenght{
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+.space---{
+    border-bottom: 0.1em solid rgb(202, 80, 80);
+    margin-bottom: 0.5em;
+}
